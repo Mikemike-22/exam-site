@@ -55,5 +55,26 @@ var myQuestions =[
     },
     correctAnswer:'d'
   },
+];
+function showQuestion(questions,quizContainer){
+  var output=[];
+  var answers;
 
-]
+  for(var i=0; i<questions.length; i++){
+    answers=[];
+    for(letter in questions[i].answers){
+      answers.push(
+        '<label>'
+           +'<input type="radio" name="question'+i+'" value="'+letter'">'
+           +letter+':'
+           +quwestions[i].answers[letter]
+        +'</label>'
+      );
+    }
+    output.push(
+      '<div class="question">'+ qustions[i].question +'</div>'
+      +'<div class="answers">'+answers.join('')+'</div>'
+    );
+  }
+  quizContainer.inerHtml=output.join('');
+}
