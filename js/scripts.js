@@ -1,80 +1,26 @@
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-    function showQuestions(questions, quizContainer){
-      //code
-    }
-    function showResults(question, quizContainer, resutsContainer){
-      //code
-    }
-    //show the questions
-    showQuestions(questions, quizContainer);
+var testResults = function(Q1, Q2 ,Q3 ,Q4 ,Q5 ,Q6 ){
+return Q1+Q2+Q3+Q4+Q5+Q6;
 
-    //when user clicks submit, show results
-    submitButton.onclick=function(){
 
-    }
 }
+   $(document).ready(function(){
+  $("form#test").submit(function(event){
 
-var myQuestions =[
-  {
-    question: "Which is not programming language?"
-    answer:{
-      a: 'HTML',
-      b: 'Java Script',
-      c: 'CSS',
-      d: 'PHP'
-    },
-    correctAnswer: 'a'
-  },
-  {
-    question: "Select an assignment operator?"
-    answers:{
-      a:'!==',
-      b:'+=',
-      c:'-=',
-      d:'='
-    },
-    correctAnswer:'d'
-  },
-  {
-    question: "which is not the correct java script case?"
-    answers: {
-      a: 'myNumber',
-      b:'lowerCamelCase',
-      c:'javaScript',
-      d:'2Number'
-    },
-    correctAnswer:'d'
-  },
-  {
-    question: "which is not used to collect user input? "
-    answers:{
-      a:'confirm',
-      b:'forms',
-      c:'prompt',
-      d:'alert'
-    },
-    correctAnswer:'d'
-  },
-];
-function showQuestion(questions,quizContainer){
-  var output=[];
-  var answers;
+    var Q1 = parseInt($("input:radio[name=opt]:checked").val());
+    var Q2 = parseInt($("input:radio[name=assgt]:checked").val());
+    var Q3 = parseInt($("input:radio[name=java]:checked").val());
+    var Q4=
+    parseInt($("input:radio[name=met]:checked").val());
+    var Q5=
+    parseInt($("input:radio[name=one]:checked").val());
+    var Q6=
+    parseInt($("input:radio[name=user]:checked").val());
 
-  for(var i=0; i<questions.length; i++){
-    answers=[];
-    for(letter in questions[i].answers){
-      answers.push(
-        '<label>'
-           +'<input type="radio" name="question'+i+'" value="'+letter'">'
-           +letter+':'
-           +quwestions[i].answers[letter]
-        +'</label>'
-      );
-    }
-    output.push(
-      '<div class="question">'+ qustions[i].question +'</div>'
-      +'<div class="answers">'+answers.join('')+'</div>'
-    );
-  }
-  quizContainer.inerHtml=output.join('');
-}
+    var result = testResults(Q1, Q2, Q3, Q4, Q5, Q6);
+
+    $("#score").text("your score is:"+ result);
+      event.preventDefault();
+
+
+  });
+});

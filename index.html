@@ -9,9 +9,139 @@
     <title>COMPUTER CLUB</title>
   </head>
   <body>
-    <div id="quiz"></div>
-    <button id="submit">Get result</button>
-    <div id="result"></div>
+    <div class="container-fluid">
+      <div class="jumbotron">
+      <h1>COMPUTER QUIZ</h1>
+      </div>
+    </div>
+    <div class="conatiner">
+      <form id="test">
+          <div class="panel panel-default">
+            <div class="panel-heading">Question 1.</div>
+            <div class="panel-body">
+                <p>1. Which of the following is not a programming language?(5 pts)</p>
+                <div class="radio">
+                  <label><input type="radio" name="opt" value="0" id="A">A. PHP</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="opt" value="5" id="B">B. HTML</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="opt" value="0" id="C">C. Java Script</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="opt" value="0" id="D">D. CSS</label>
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 2.</div>
+          <div class="panel-body">
+              <p>2. Select the assignment operator. (5 pts)</p>
+              <div class="radio">
+                <label><input type="radio" name="assgt" value="0">A. !==</label>
+              </div>
+              <div class="radio">
+                  <label><input type="radio" name="assgt" value="0">B. += </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="assgt" value="0">C. -= </label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="assgt" value="5">D. = </label>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-heading">Question 3.</div>
+        <div class="panel-body">
+            <p>3. Which is not the correct case in java script?(5 pts)</p>
+            <div class="radio">
+              <label><input type="radio" name="java" value="0">A. myNumber</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="java" value="0">B. lowerCamelCase</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="java" value="0">C. javaScript</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="java" value="5">D. 12Divide</label>
+        </div>
+      </div>
+
+    </div>
+    <br>
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 4.</div>
+          <div class="panel-body">
+            <p>4. Select a string method (5 pts)</p>
+            <div class="input-group">
+              <label><input type="radio" name="met" value="0">A. toFixed(); </label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="met" value="0">B. toExponential();</label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="met" value="5">C. toLowerCase();</label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="met" value="0">D. toFloat(); </label>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 5.</div>
+          <div class="panel-body">
+            <p>5. Select one that is not a comparison operator (5 pts)</p>
+            <div class="input-group">
+              <label><input type="radio" name="one" value="0">A. > </label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="one" value="0">B. === </label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="one" value="0">C. !== </label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="one" value="5">D. + </label>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 6.</div>
+          <div class="panel-body">
+            <p>6. Which is a not used to collect user input?(5 pts)</p>
+            <div class="input-group">
+              <label><input type="radio" name="user" value="0">A. confirm()</label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="user" value="0">B. prompt()</label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="user" value="0">C. forms()</label>
+            </div>
+            <div class="input-group">
+              <label><input type="radio" name="user" value="5">D. alert()</label>
+            </div>
+
+          </div>
+        </div>
+        <br>
+      </form>
+    </div>
+    <div class="text-center">
+    <button class="btn-success" type="submit" name="button" onclick="myFunction">Submit</button>
+    </div>
+        <p id="score"></p>
 
   </body>
 </html>
