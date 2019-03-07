@@ -14,6 +14,7 @@ Git
 
 ## Installation Requirements
 A functional web browser.
+A text editor.
 
 ## Known Bugs
 The output for the score is not yet functioning.
