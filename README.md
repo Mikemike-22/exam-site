@@ -15,14 +15,14 @@ Git
 ## Installation Requirements
 A functional web browser.
 
-##Known Bugs
+## Known Bugs
 The output for the score is not yet functioning.
 
 
 ## Support and contact details
 Michael Kipkorir
 
-##License
+## License
 MIT License
 
 Copyright (c) [2019] [Michael Kipkorir]
